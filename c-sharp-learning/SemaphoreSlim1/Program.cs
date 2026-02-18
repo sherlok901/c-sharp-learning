@@ -9,7 +9,6 @@ class Program
     static async Task Main(string[] args)
     {
         var providerIds = Enumerable.Range(1, 15);
-        var successPrices = new ConcurrentDictionary<int, int>();
         var bound = new SemaphoreSlim(3, 3);
         
         var tasks = providerIds.Select(async id =>
@@ -18,7 +17,6 @@ class Program
             {
                 await bound.WaitAsync();
                 var result = await GetPriceFromProviderAsync(id);
-                successPrices.GetOrAdd(id, result);
                 return new Result(result);
             }
             catch (Exception e)
