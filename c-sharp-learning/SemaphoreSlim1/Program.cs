@@ -10,12 +10,13 @@ class Program
     {
         var providerIds = Enumerable.Range(1, 15);
         var bound = new SemaphoreSlim(3, 3);
+        using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
         
         var tasks = providerIds.Select(async id =>
         {
             try
             {
-                await bound.WaitAsync();
+                await bound.WaitAsync(cts.Token);
                 var result = await GetPriceFromProviderAsync(id);
                 return new Result(result);
             }
@@ -43,8 +44,7 @@ class Program
         
         await Task.Delay(rand.Next(500, 2000));
         
-        Interlocked.Increment(ref _count);
-        if (_count % 5 == 0)
+        if (Interlocked.Increment(ref _count) % 5 == 0)
         {
             throw new Exception("Provider timeout");
         }

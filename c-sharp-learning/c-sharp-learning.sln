@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreSlim1", "SemaphoreSlim1\SemaphoreSlim1.csproj", "{BCA6E202-C9C7-4B5C-9D42-8B8525363DDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static1", "Static1\Static1.csproj", "{7F0F1F04-6FDF-49E8-B6A8-E209A66C7694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoArray", "TwoArray\TwoArray.csproj", "{AC74F0EC-2559-4B52-B4A5-B42E6761A8A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{BCA6E202-C9C7-4B5C-9D42-8B8525363DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA6E202-C9C7-4B5C-9D42-8B8525363DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA6E202-C9C7-4B5C-9D42-8B8525363DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0F1F04-6FDF-49E8-B6A8-E209A66C7694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0F1F04-6FDF-49E8-B6A8-E209A66C7694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0F1F04-6FDF-49E8-B6A8-E209A66C7694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0F1F04-6FDF-49E8-B6A8-E209A66C7694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC74F0EC-2559-4B52-B4A5-B42E6761A8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC74F0EC-2559-4B52-B4A5-B42E6761A8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC74F0EC-2559-4B52-B4A5-B42E6761A8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC74F0EC-2559-4B52-B4A5-B42E6761A8A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
